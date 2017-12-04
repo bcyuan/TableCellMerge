@@ -55,6 +55,7 @@
     <Compile Include="单类型集合.cs" />
     <Compile Include="复合集合.cs" />
     <Compile Include="暂时.cs" />
+    <Compile Include="暂时2.cs" />
     <Compile Include="正则表达式Regex.cs" />
     <Compile Include="移除元素.cs" />
     <Compile Include="遍历类对象.cs" />

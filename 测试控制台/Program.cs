@@ -21,11 +21,7 @@ namespace 测试控制台
            // model.startAndEndTime = model.START_TIME ?? "" + "-" + model.END_TIME ?? "";
             //string cc = ("2017/10/30 星期一 16:32:20" ?? "") + "-" + ("2017/10/30 星期一 16:32:20" ?? "");
             //TryCatch.c();
-          DateTime gg=  Convert.ToDateTime("2017-01-01 00:00:00");
-            int c = 7;
-            string b = "6";
-            string a = b + c;//67
-            string d = a + c;
+            时间日期.c();
         }
     }
 }

@@ -11,7 +11,7 @@ namespace 测试控制台
         public static void c()
         {
             List<stu> lstu = new List<stu>{
-            new stu{id=1,name="zs",age=5,pc=1},
+            new stu{id=3,name="zs",age=5,pc=1},
             new stu{id=3,name="zs",age=4,pc=2},
             new stu{id=3,name="zs",age=3,pc=3},
             new stu{id=2,name="ls",age=1,pc=1},
@@ -20,6 +20,7 @@ namespace 测试控制台
             new stu{id=4,name="lr",age=1,pc=2}
             };
             List<stu> lstugroup = lstu;
+            List<stu> lstugroup0101 = lstu;
 
             string a = "1,3,2,6,9,9";
             string b = "1,3,5,7,9";
@@ -136,8 +137,19 @@ namespace 测试控制台
             //11 处理Where,找不到是count=0而不报错。
             lstugroup = lstugroup.Where(s => s.name.StartsWith("m")).ToList(); // 筛选name以l开头；
 
+            //12
 
+            var g2 = lstugroup0101.GroupBy(x => x.id);
 
+           //lstugroup0101= g2.Where(v => v.Key ==3).ToList();
+            List<stu> dddd=new List<stu>();
+            foreach (var item in g2)
+            {
+                foreach (var item2 in item)
+                {
+                    dddd.Add(item2);
+                }
+            }
 
         }//断点处
     }

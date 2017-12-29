@@ -8,7 +8,7 @@ namespace 测试控制台
     {
         private static void Main(string[] args)
         {
-            //List集合基础操作.c();
+            List集合基础操作.c();
             //正则表达式.c();
             //Linq总结.c();
             //string c = null;
@@ -21,7 +21,7 @@ namespace 测试控制台
            // model.startAndEndTime = model.START_TIME ?? "" + "-" + model.END_TIME ?? "";
             //string cc = ("2017/10/30 星期一 16:32:20" ?? "") + "-" + ("2017/10/30 星期一 16:32:20" ?? "");
             //TryCatch.c();
-            时间日期.c();
+           // 时间日期.c();
         }
     }
 }

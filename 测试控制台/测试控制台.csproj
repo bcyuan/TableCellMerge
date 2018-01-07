@@ -58,6 +58,7 @@
     <Compile Include="TryCatch.cs" />
     <Compile Include="单类型集合.cs" />
     <Compile Include="复合集合.cs" />
+    <Compile Include="字符串操作.cs" />
     <Compile Include="时间日期.cs" />
     <Compile Include="暂时.cs" />
     <Compile Include="暂时2.cs" />

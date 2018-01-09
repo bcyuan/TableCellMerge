@@ -8,8 +8,8 @@ namespace 测试控制台
     {
         private static void Main(string[] args)
         {
-            //List集合基础操作.c();
-            正则表达式.c();
+            List集合基础操作.c();
+            //正则表达式.c();
             //Linq总结.c();
             //string c = null;
             //int int_b = Convert.ToInt32(c);

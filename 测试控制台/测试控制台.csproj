@@ -55,6 +55,7 @@
     <Compile Include="List集合基础操作.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ToLookup.cs" />
     <Compile Include="TryCatch.cs" />
     <Compile Include="单类型集合.cs" />
     <Compile Include="复合集合.cs" />

@@ -92,6 +92,8 @@ namespace 测试控制台
 
             //总结：list 进行linq查询前和取查询结果后的属性值前都要判断null
             #endregion
+            
+            
 
             // Console.ReadKey();
         }//断点处

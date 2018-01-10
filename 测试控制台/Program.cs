@@ -9,7 +9,7 @@ namespace 测试控制台
         private static void Main(string[] args)
         {
             //List集合基础操作.c();
-            List集合基础操作2.c();
+            //List集合基础操作2.c();
             //正则表达式.c();
             //Linq总结.c();
             //string c = null;
@@ -23,9 +23,8 @@ namespace 测试控制台
             //string cc = ("2017/10/30 星期一 16:32:20" ?? "") + "-" + ("2017/10/30 星期一 16:32:20" ?? "");
             //TryCatch.c();
            // 时间日期.c();
-           
-          //  List集合基础操作2.ceshi(测试控制台.Data);
-            
+            //  List集合基础操作2.ceshi(测试控制台.Data);
+            Product.GetList();
         }
     }
 }

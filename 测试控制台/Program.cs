@@ -9,7 +9,7 @@ namespace 测试控制台
         private static void Main(string[] args)
         {
             //List集合基础操作.c();
-            //List集合基础操作2.c();
+            List集合基础操作2.c();
             //正则表达式.c();
             //Linq总结.c();
             //string c = null;
@@ -24,7 +24,7 @@ namespace 测试控制台
             //TryCatch.c();
            // 时间日期.c();
             //  List集合基础操作2.ceshi(测试控制台.Data);
-            Product.GetList();
+            //Product.GetList();
         }
     }
 }

@@ -67,7 +67,7 @@ namespace 测试控制台
             var seatingAssignments = employees.Zip(seats, (e, s) => new { EmployeeId = e.Id, SeatId = s.Id });
             foreach (var seat in seatingAssignments)
             {
-                Console.WriteLine("雇员: " + seat.EmployeeId + " 预约了座位 " + seat.SeatId);
+                //Console.WriteLine("雇员: " + seat.EmployeeId + " 预约了座位 " + seat.SeatId);
 
             }
             #endregion
@@ -103,16 +103,13 @@ namespace 测试控制台
 
             // Console.ReadKey();
         }//断点处
-
-        public static string ceshi<T>(List<T> TList,string DicId, string DicName)
+        #region 字典表通用替换
+        public static string ceshi<T>(List<T> TList, string DicId, string DicName)
         {
-            string tmp = "";
             var tmpobj = TList.Find(y => Convert.ToString(y.GetType().GetProperty(DicId).GetValue(y)) == "7");
-            tmp = Convert.ToString(tmpobj.GetType().GetProperty(DicName).GetValue(typeof(T).FullName));
-            //TList.GetType
-            return tmp;
+            return tmpobj == null ? "" : Convert.ToString(tmpobj.GetType().GetProperty(DicName).GetValue(tmpobj));
         }
-
+        #endregion
     }
     public class Employee
     {

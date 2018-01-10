@@ -20,6 +20,7 @@ namespace 测试控制台
             new ModelStu{id=6,age=5,name="ls",pc=2},
             new ModelStu{id=7,age=5,name="lr",pc=2}
             };
+           
             #region init数据
             List<ModelStu> lstu1 = lstu;
             List<ModelStu> lstuNull = lstu;
@@ -82,7 +83,7 @@ namespace 测试控制台
                     new Badge { EmployeeId = 10, BadgeNumber = 6 },  
                     new Badge { EmployeeId = 13, BadgeNumber = 7 },  
                 };
-            var badgeAssignments = employees.GroupJoin(badges, e => e.Id, b => b.EmployeeId,(e, bList) => new { Name = e.Name, Badges = bList.ToList() });
+            var badgeAssignments = employees.GroupJoin(badges, e => e.Id, b => b.EmployeeId, (e, bList) => new { Name = e.Name, Badges = bList.ToList() });
             #endregion
 
             #region Lsit判断null
@@ -93,8 +94,25 @@ namespace 测试控制台
             //总结：list 进行linq查询前和取查询结果后的属性值前都要判断null
             #endregion
 
+            #region MyRegion
+            string mmc = ceshi(DataInfo.GetData(),"id","age");
+            
+
+
+            #endregion
+
             // Console.ReadKey();
         }//断点处
+
+        public static string ceshi<T>(List<T> TList,string DicId, string DicName)
+        {
+            string tmp = "";
+            var tmpobj = TList.Find(y => Convert.ToString(y.GetType().GetProperty(DicId).GetValue(y)) == "7");
+            tmp = Convert.ToString(tmpobj.GetType().GetProperty(DicName).GetValue(typeof(T).FullName));
+            //TList.GetType
+            return tmp;
+        }
+
     }
     public class Employee
     {

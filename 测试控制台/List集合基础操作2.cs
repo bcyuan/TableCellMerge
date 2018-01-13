@@ -104,8 +104,10 @@ namespace 测试控制台
             // Console.ReadKey();
         }//断点处
         #region 字典表通用替换
-        public static string ceshi<T>(List<T> TList, string DicId, string DicName)
+        public static string ceshi<T>(List<T> TList, string DicId, string DicName) where T: new ()
         {
+            T model=new T();
+           // var cc = model.GetType().;
             var tmpobj = TList.Find(y => Convert.ToString(y.GetType().GetProperty(DicId).GetValue(y)) == "7");
             return tmpobj == null ? "" : Convert.ToString(tmpobj.GetType().GetProperty(DicName).GetValue(tmpobj));
         }

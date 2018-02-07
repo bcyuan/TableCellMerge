@@ -48,10 +48,11 @@
   <ItemGroup>
     <Compile Include="CS_4新特性.cs" />
     <Compile Include="CS_6新特性.cs" />
-    <Compile Include="DataInfo.cs" />
+    <Compile Include="Data.cs" />
     <Compile Include="json类.cs" />
     <Compile Include="Linq总结.cs" />
     <Compile Include="List一维集合.cs" />
+    <Compile Include="PLINGQ.cs" />
     <Compile Include="List集合基础操作2.cs" />
     <Compile Include="List集合基础操作.cs" />
     <Compile Include="Program.cs" />

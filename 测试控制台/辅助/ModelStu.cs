@@ -11,7 +11,7 @@ namespace 测试控制台.辅助
         public int id { get; set; }
         public string name { get; set; }
         public int age { get; set; }
-        public int pc { get; set; }
+        public double pc { get; set; }
         public string mm { get; set; }
     }
 }

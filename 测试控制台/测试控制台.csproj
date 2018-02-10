@@ -38,6 +38,9 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Linq.Dynamic">
+      <HintPath>..\packages\System.Linq.Dynamic.1.0.7\lib\net40\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -49,6 +52,8 @@
     <Compile Include="CS_4新特性.cs" />
     <Compile Include="CS_6新特性.cs" />
     <Compile Include="Data.cs" />
+    <Compile Include="DynamicLinqDemo.cs" />
+    <Compile Include="IDataTablePivot.cs" />
     <Compile Include="json类.cs" />
     <Compile Include="Linq总结.cs" />
     <Compile Include="List一维集合.cs" />
@@ -62,17 +67,23 @@
     <Compile Include="单类型集合.cs" />
     <Compile Include="复合集合.cs" />
     <Compile Include="字符串操作.cs" />
+    <Compile Include="实现接口的各种方法%28需求%29\DataTablePivotTwo.cs" />
+    <Compile Include="实现接口的各种方法%28需求%29\DataTablePivotOne.cs" />
     <Compile Include="时间日期.cs" />
     <Compile Include="暂时.cs" />
     <Compile Include="暂时2.cs" />
     <Compile Include="正则表达式Regex.cs" />
     <Compile Include="移除元素.cs" />
+    <Compile Include="行转列.cs" />
+    <Compile Include="辅助\GroupCompute.cs" />
+    <Compile Include="辅助\ModelConvertHelper.cs" />
     <Compile Include="辅助\ModelStu.cs" />
     <Compile Include="遍历类对象.cs" />
     <Compile Include="集合之where操作.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

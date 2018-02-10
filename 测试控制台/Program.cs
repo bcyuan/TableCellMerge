@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.Linq;
 using System.Diagnostics;
+using DataTable_RowToColumn;
+using 测试控制台.辅助;
 namespace 测试控制台
 {
     static class Program
@@ -15,7 +17,7 @@ namespace 测试控制台
             //Linq总结.c();
             //string c = null;
             //int int_b = Convert.ToInt32(c);
-            //CS_4新特性.c();
+            CS_4新特性.c();
             //json类.getcc();
             //复合集合.c();
             //集合之where操作.c();
@@ -25,7 +27,9 @@ namespace 测试控制台
             //TryCatch.c();
             // 时间日期.c();
             //  List集合基础操作2.ceshi(测试控制台.Data);
-            PLINGQ.c();
+            //PLINGQ.c();
+            //行转列.c();
+            //GroupCompute.c();
             
 
         }

@@ -16,16 +16,16 @@ namespace 测试控制台
         private static ConcurrentQueue<Product2> products = new ConcurrentQueue<Product2>();
         private static List<ModelStu> lstu = new List<ModelStu>();
         private static ModelStu modelStu = new ModelStu();
-        public static List<ModelStu> GetData()
+        public static List<ModelStu>  GetData()
         {
             lstu = new List<ModelStu>{
-            new ModelStu{id=1,age=1,name="zs",pc=1},
-            new ModelStu{id=2,age=1,name="zs",pc=2},
-            new ModelStu{id=3,age=3,name="zs",pc=3},
-            new ModelStu{id=4,age=3,name="ls",pc=1},
-            new ModelStu{id=5,age=5,name="ls",pc=2},
-            new ModelStu{id=6,age=5,name="ls",pc=2},
-            new ModelStu{id=7,age=10,name="lr",pc=2}
+            new ModelStu{id=1,age=1,name="zs",pc=1,mm="333"},
+            new ModelStu{id=2,age=1,name="zs",pc=2,mm="333"},
+            new ModelStu{id=3,age=3,name="zs",pc=3,mm="333"},
+            new ModelStu{id=4,age=3,name="ls",pc=1,mm="444"},
+            new ModelStu{id=5,age=5,name="ls",pc=2,mm="444"},
+            new ModelStu{id=6,age=5,name="ls",pc=2,mm="444"},
+            new ModelStu{id=7,age=6,name="we",pc=2,mm="222"}
             };
             return lstu;
         }
